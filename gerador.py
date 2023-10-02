@@ -8,7 +8,8 @@ from sklearn.metrics import accuracy_score, confusion_matrix
 warnings.filterwarnings("ignore")
 
 # Ler os dados do arquivo CSV
-data = pd.read_csv('C:\\Users\\Vine\\Desktop\\dados\\dados.csv', header=None, usecols=range(6))
+data = pd.read_csv('C:\\Users\\Fujioka T6\\Desktop\\workspace\\python-workspace\\gerador\\dados.csv',
+                   header=None, usecols=range(6))
 data = data.apply(pd.to_numeric, errors='coerce')
 data = data.dropna(axis=1)
 data.columns = ['Ball_1', 'Ball_2', 'Ball_3', 'Ball_4', 'Ball_5', 'Draw']
